@@ -1,6 +1,9 @@
-<input type="search" id="name" class="form-control" placeholder="Enter name" onChange={onTextInputChange} value={textInput} />
-<label class="form-label" for="form1">Name</label>
-</div>
-<button type="button" id="add" onClick={onClick} disabled={!textInput} class="btn btn-primary">
-<i class="fas fa-search"></i>
-</button>
+<div class="input-group" id="addForm">
+    <div class="form-outline">
+      <input placeholder="Enter name" onChange={onTextInputChange} id="search-input" type="search" id="form1" class="form-control" />
+      <label class="form-label" for="form1">Search</label>
+    </div>
+    <button id="add" onClick={onClick} disabled={!textInput} type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
